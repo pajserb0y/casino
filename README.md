@@ -24,6 +24,7 @@
 - Security-packages included to make the application more robust are: **helmet**, **hpp**, **express-rate-limit** & **express-mongo-sanitize**
 
 ### Blockchain:
+
 (coming soon...)
 
 ## Quick Start
@@ -91,3 +92,13 @@ npm run build
 ```bash
 NODE_ENV=production node server.js
 ```
+
+## Blockchain route
+
+| Route                                        | Type |                 Description |
+| -------------------------------------------- | :--: | --------------------------: |
+| /blockchain/balance?address=<WALLET_ADDRESS> | POST | Resolves the match on-chain |
+
+Addresses to test:
+address1=0x7169D38820dfd117C3FA1f22a697dBA58d90BA06
+address2=0x1D3235C21b9Fd88dc2A93FA95eb7E29572ebE671

@@ -1,8 +1,8 @@
-const dotenv = require('dotenv')
+const dotenv = require("dotenv");
 
 // Load env vars if env is not production
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config({ path: './server/config/local.env' })
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config({ path: "./server/config/local.env" });
 }
 
 module.exports = {
@@ -11,4 +11,5 @@ module.exports = {
   MONGO_URI: process.env.MONGO_URI,
   NODE_ENV: process.env.NODE_ENV,
   INITIAL_CHIPS_AMOUNT: 100000,
-  }
+  ALCHEMY_API_KEY: process.env.ALCHEMY_API_KEY,
+};
